@@ -1,6 +1,7 @@
 package net.jesper.thostunlimited.block;
 
 import net.jesper.thostunlimited.ThorMod;
+import net.jesper.thostunlimited.block.custom.Thoster;
 import net.jesper.thostunlimited.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -20,6 +21,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> THORIUM = registerBlock("thorium",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> THOSTER = registerBlock("thoster",
+            () -> new Thoster(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
