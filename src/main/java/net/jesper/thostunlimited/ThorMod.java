@@ -27,7 +27,7 @@ public class ThorMod
     // Define mod id in a common place for everything to reference
     public static final String MODID = "thostunlimited";
     // Directly reference a slf4j logger
-    public static final Logger LOGGER = LogUtils.getLogger();
+    private static final Logger LOGGER = LogUtils.getLogger();
 
     public ThorMod()
     {
@@ -61,7 +61,7 @@ public class ThorMod
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES){
-            event.accept(ModItems.GABEL);
+            event.accept(ModItems.FORK);
         }
     }
 

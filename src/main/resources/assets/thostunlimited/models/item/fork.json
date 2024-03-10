@@ -2,17 +2,17 @@
   "parent": "minecraft:item/handheld",
   "loader": "forge:separate_transforms",
   "base": {
-    "parent": "thostunlimited:item/gabel3d"
+    "parent": "thostunlimited:item/fork3d"
   },
   "perspectives": {
     "gui": {
-      "parent": "thostunlimited:item/gabel3d"
+      "parent": "thostunlimited:item/fork3d"
     },
     "ground": {
-      "parent": "thostunlimited:item/gabel3d"
+      "parent": "thostunlimited:item/fork3d"
     },
     "fixed": {
-      "parent": "thostunlimited:item/gabel3d"
+      "parent": "thostunlimited:item/fork3d"
     }
   }
 }

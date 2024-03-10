@@ -15,11 +15,12 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ThorMod.MODID);
 
     public static final RegistryObject<CreativeModeTab> TUTORIAL_TAB = CREATIVE_MODE_TABS.register("tutorial_tab",
-    () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.GABEL.get()))
+    () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.FORK.get()))
             .title(Component.translatable("creativetab.thostmain"))
             .displayItems((pParameters, pOutput) ->{
-                pOutput.accept(ModItems.GABEL.get());
+                pOutput.accept(ModItems.FORK.get());
                 pOutput.accept(ModBlocks.THORIUM.get());
+                pOutput.accept(ModItems.THORIUMBAR.get());
             } )
             .build());
     public static void register (IEventBus eventBus){

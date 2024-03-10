@@ -11,8 +11,11 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, ThorMod.MODID);
 
-    public static final RegistryObject<Item> GABEL = ITEMS.register("gabel",
+    public static final RegistryObject<Item> FORK = ITEMS.register("fork",
             () -> new Item(new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<Item> THORIUMBAR = ITEMS.register("thoriumbar",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -1,5 +1,6 @@
 {
-  "item.thostunlimited.gabel": "Gabel",
+  "item.thostunlimited.fork": "Fork",
   "creativetab.thostmain": "Thost Mod",
-  "block.thostunlimited.thorium": "Thorium Ore"
+  "block.thostunlimited.thorium": "Thorium Ore",
+  "item.thostunlimited.thoriumbar": "Thorium Ingot"
 }
