@@ -5,7 +5,7 @@
   "experience": 0.7,
   "group": "thorium_ingot",
   "ingredient": {
-    "item": "thostunlimited:thorium"
+    "item": "thostunlimited:thoriumore"
   },
   "result": "thostunlimited:thoriumbar"
 }

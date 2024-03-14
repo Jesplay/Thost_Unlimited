@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import net.jesper.thostunlimited.block.ModBlocks;
 import net.jesper.thostunlimited.item.ModCreativeModeTabs;
 import net.jesper.thostunlimited.item.ModItems;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageType;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -28,6 +30,9 @@ public class ThorMod
     public static final String MODID = "thostunlimited";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
+
+    public DamageType Krill = new DamageType("Krill",0);
+    //public DamageSource KrillIssue = new DamageSource()
 
     public ThorMod()
     {

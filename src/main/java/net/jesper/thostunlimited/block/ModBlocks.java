@@ -3,10 +3,12 @@ package net.jesper.thostunlimited.block;
 import net.jesper.thostunlimited.ThorMod;
 import net.jesper.thostunlimited.block.custom.Thoster;
 import net.jesper.thostunlimited.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,7 +22,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, ThorMod.MODID);
 
     public static final RegistryObject<Block> THORIUM = registerBlock("thorium",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2f), UniformInt.of(100,300)));
 
     public static final RegistryObject<Block> THOSTER = registerBlock("thoster",
             () -> new Thoster(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));

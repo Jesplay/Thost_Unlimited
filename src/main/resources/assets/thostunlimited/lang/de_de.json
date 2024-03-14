@@ -1,5 +1,7 @@
 {
   "item.thostunlimited.fork": "Gabel",
   "creativetab.thostmain": "Thost Modifikation",
-  "block.thostunlimited.thorium": "Thorium Erz"
+  "block.thostunlimited.thorium": "Thorium Erz",
+  "item.thostunlimited.thoriumbar": "Thorium Barren",
+  "item.thostunlimited.thoriumore": "Rohes Thorium Erz"
 }

@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.FORK.get());
                 pOutput.accept(ModBlocks.THORIUM.get());
                 pOutput.accept(ModItems.THORIUMBAR.get());
+                pOutput.accept(ModItems.THORIUMORE.get());
             } )
             .build());
     public static void register (IEventBus eventBus){
